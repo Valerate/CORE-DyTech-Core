@@ -4,7 +4,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- Misc--------------------------------------------------------
 	{
 		Name = "rubber",
-		Subgroup = "processed",
+		Subgroup = "processing",
 		Enabled = true,
 		Recipe = true,
 		Time = 2,
@@ -22,6 +22,7 @@ INTERMEDIATES = {
 		Subgroup = "gears",
 		Enabled = true,
 		Recipe = true,
+		Order = "1",
 		Time = 1,
 		Recipe_Normal = {{type="item", name="stone", amount=2}},
 		Productivity = true,
@@ -31,6 +32,7 @@ INTERMEDIATES = {
 		Subgroup = "gears",
 		Enabled = false,
 		Recipe = true,
+		Order = "3",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="steel-plate", amount=2}},
 		AddToTech = "steel-processing",
@@ -38,9 +40,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "solar-cell",
-		Subgroup = "power",
+		Subgroup = "all",
 		Enabled = false,
 		Recipe = true,
+		Order = "1",
 		Time = 2,
 		Recipe_Metallurgy = {{type="item", name="silicon", amount=3},{type="item", name="copper-cable", amount=5},{type="item", name="iron-plate", amount=1},{type="item", name="glass", amount=2}},
 		Recipe_Normal = {{type="item", name="iron-plate", amount=3},{type="item", name="copper-cable", amount=5},{type="item", name="copper-plate", amount=1},{type="item", name="glass", amount=2}},
@@ -58,14 +61,14 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "sandbag",
-		Subgroup = "processed",
+		Subgroup = "processing",
 		Enabled = true,
 		Recipe = true,
 		Recipe_Normal = {{type="item", name="sand", amount=25}},
 	},
 	{
 		Name = "quick-sand",
-		Subgroup = "processed",
+		Subgroup = "processing",
 		Enabled = true,
 		Recipe = true,
 		RecipeType = "crafting-with-fluid",
@@ -73,7 +76,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "glass",
-		Subgroup = "processed",
+		Subgroup = "processing",
 		Enabled = true,
 		Recipe = true,
 		Time = 2,
@@ -88,7 +91,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "bone-charcoal",
-		Subgroup = "processed",
+		Subgroup = "processing",
 		Fuel_Value = "3.5MJ",
 		RecipeType = "smelting",
 		Enabled = false,
@@ -115,6 +118,7 @@ INTERMEDIATES = {
 		Enabled = false,
 		Productivity = false,
 		Recipe = true,
+		Order = "5",
 		Time = 5,
 		RecipeType = "crafting-with-fluid",
 		Recipe_Metallurgy = {{type = "item", name="flying-robot-frame", amount=1},{type = "fluid", name="molten-titanium", amount=5}},
@@ -128,6 +132,7 @@ INTERMEDIATES = {
 		Enabled = false,
 		Productivity = false,
 		Recipe = true,
+		Order = "6",
 		Time = 5,
 		RecipeType = "crafting-with-fluid",
 		Recipe_Metallurgy = {{type = "item", name="flying-robot-frame", amount=1},{type = "fluid", name="molten-titanium-aluminide", amount=5}},
@@ -282,18 +287,20 @@ INTERMEDIATES = {
 	---------------------------------------------------- Lenses --------------------------------------------------------
 	{
 		Name = "basic-lens",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "1",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="glass", amount=2},{type="item", name="electronic-circuit", amount=5}},
 		AddToTech = "laser-turrets",
 	},	
 	{
 		Name = "ruby-lens-1",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "2",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="basic-lens", amount=1},{type="item", name="cut-ruby", amount=2}},
 		AddToTech = "laser-turrets",
@@ -301,9 +308,10 @@ INTERMEDIATES = {
 	},	
 	{
 		Name = "ruby-lens-2",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "3",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="ruby-lens-1", amount=1},{type="item", name="compressed-ruby", amount=4}},
 		AddToTech = "laser-turrets",
@@ -311,9 +319,10 @@ INTERMEDIATES = {
 	},	
 	{
 		Name = "sapphire-lens-1",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "3",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="basic-lens", amount=1},{type="item", name="raw-sapphire", amount=1}},
 		AddToTech = "laser-turrets-1",
@@ -321,9 +330,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "sapphire-lens-2",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "4",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="sapphire-lens-1", amount=1},{type="item", name="cut-sapphire", amount=2}},
 		AddToTech = "laser-turrets-1",
@@ -331,9 +341,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "sapphire-lens-3",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "5",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="sapphire-lens-2", amount=1},{type="item", name="compressed-sapphire", amount=4}},
 		AddToTech = "laser-turrets-1",
@@ -341,9 +352,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "emerald-lens-1",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "6",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="basic-lens", amount=1},{type="item", name="raw-emerald", amount=1}},
 		AddToTech = "laser-turrets-2",
@@ -351,9 +363,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "emerald-lens-2",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "7",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="emerald-lens-1", amount=1},{type="item", name="cut-emerald", amount=2}},
 		AddToTech = "laser-turrets-2",
@@ -361,9 +374,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "emerald-lens-3",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "8",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="emerald-lens-2", amount=1},{type="item", name="compressed-emerald", amount=4}},
 		AddToTech = "laser-turrets-2",
@@ -371,9 +385,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "topaz-lens-1",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "9",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="basic-lens", amount=1},{type="item", name="raw-topaz", amount=4}},
 		AddToTech = "laser-turrets-3",
@@ -381,9 +396,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "topaz-lens-2",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "91",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="topaz-lens-1", amount=1},{type="item", name="cut-topaz", amount=8}},
 		AddToTech = "laser-turrets-3",
@@ -391,9 +407,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "topaz-lens-3",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "92",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="topaz-lens-2", amount=1},{type="item", name="compressed-topaz", amount=12}},
 		AddToTech = "laser-turrets-3",
@@ -401,9 +418,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "diamond-lens-1",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "93",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="basic-lens", amount=1},{type="item", name="raw-diamond", amount=200}},
 		AddToTech = "laser-turrets-4",
@@ -411,9 +429,10 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "diamond-lens-2",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
 		Recipe = true,
+		Order = "94",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="diamond-lens-1", amount=1},{type="item", name="cut-diamond", amount=200}},
 		AddToTech = "laser-turrets-4",
@@ -421,8 +440,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "diamond-lens-3",
-		Subgroup = "circuitry",
+		Subgroup = "turret-2",
 		Enabled = false,
+		Order = "95",
 		Recipe = true,
 		Time = 2,
 		Recipe_Normal = {{type="item", name="diamond-lens-2", amount=1},{type="item", name="compressed-diamond", amount=200}},
@@ -432,7 +452,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- Battery-Packs -------------------------------------------------
 	{
 		Name = "ruby-battery-pack",
-		Subgroup = "circuitry",
+		Subgroup = "battery",
 		Enabled = false,
 		Recipe = true,
 		Time = 5,
@@ -443,7 +463,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "sapphire-battery-pack",
-		Subgroup = "circuitry",
+		Subgroup = "battery",
 		Enabled = false,
 		Recipe = true,
 		Time = 15,
@@ -454,7 +474,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "emerald-battery-pack",
-		Subgroup = "circuitry",
+		Subgroup = "battery",
 		Enabled = false,
 		Recipe = true,
 		Time = 30,
@@ -465,7 +485,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "topaz-battery-pack",
-		Subgroup = "circuitry",
+		Subgroup = "battery",
 		Enabled = false,
 		Recipe = true,
 		Time = 45,
@@ -476,7 +496,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "diamond-battery-pack",
-		Subgroup = "circuitry",
+		Subgroup = "battery",
 		Enabled = false,
 		Recipe = true,
 		Time = 60,
@@ -488,10 +508,11 @@ INTERMEDIATES = {
 	---------------------------------------------------- Electronics--------------------------------------------------------
 	{
 		Name = "mixed-wires",
-		Subgroup = "circuitry",
+		Subgroup = "wires",
 		Enabled = false,
 		Recipe = true,
 		Time = 0.1,
+		Order = "991",
 		Recipe_Metallurgy = {{type="item", name="red-wire", amount=1} , {type="item", name="green-wire", amount=1},{type="item", name="aluminium-wire", amount=1},{type="item", name="electrum-wire", amount=1}},
 		Recipe_Normal = {{type="item", name="red-wire", amount=1} , {type="item", name="green-wire", amount=1}},
 		Productivity = false,
@@ -501,10 +522,11 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "bundled-wire",
-		Subgroup = "circuitry",
+		Subgroup = "wires",
 		Enabled = false,
 		Recipe = true,
 		Time = 5,
+		Order = "992",
 		Recipe_Metallurgy = {{type="item", name="mixed-wires", amount=1},{type="item", name="rubber", amount=2},{type="item", name="tin-plate", amount=1}},
 		Recipe_Normal = {{type="item", name="mixed-wires", amount=1},{type="item", name="rubber", amount=2}},
 		Productivity = true,
@@ -515,6 +537,7 @@ INTERMEDIATES = {
 		Subgroup = "circuitry",
 		Enabled = false,
 		Recipe = true,
+		Order = "4",
 		Time = 30,		
 		Recipe_Metallurgy = {{type="item", name="processing-unit", amount=5},{type="item", name="bundled-wire", amount=5}},
 		Recipe_Normal = {{type="item", name="processing-unit", amount=5},{type="item", name="bundled-wire", amount=5}},
@@ -527,7 +550,8 @@ INTERMEDIATES = {
 		Subgroup = "circuitry",
 		Enabled = false,
 		Recipe = true,
-		Time = 30,	
+		Time = 30,
+		Order = "5",		
 		RecipeType = "crafting-with-fluid",
 		Recipe_Normal = {{type="fluid", name="sulfuric-acid", amount=15},{type="item", name="compressed-diamond", amount=1}},
 		Tech = true,
@@ -540,6 +564,7 @@ INTERMEDIATES = {
 		Subgroup = "circuitry",
 		Enabled = false,
 		Recipe = true,
+		Order = "6",
 		Time = 30,	
 		Productivity = true,
 		RecipeType = "crafting-with-fluid",
@@ -549,7 +574,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- Mining Drill heads--------------------------------------------------------
 	{
 		Name = "mininghead-0",
-		Subgroup = "all",
+		Subgroup = "mining",
 		Enabled = true,
 		Productivity = false,
 		Recipe = true,
@@ -559,7 +584,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "mininghead-1",
-		Subgroup = "all",
+		Subgroup = "mining",
 		Enabled = false,
 		Productivity = false,
 		Recipe = true,
@@ -571,7 +596,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "mininghead-2",
-		Subgroup = "all",
+		Subgroup = "mining",
 		Enabled = false,
 		Productivity = false,
 		Recipe = true,
@@ -583,7 +608,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "mininghead-3",
-		Subgroup = "all",
+		Subgroup = "mining",
 		Enabled = false,
 		Productivity = false,
 		Recipe = true,
@@ -595,7 +620,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "mininghead-4",
-		Subgroup = "all",
+		Subgroup = "mining",
 		Enabled = false,
 		Productivity = false,
 		Recipe = true,
@@ -607,7 +632,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "mininghead-5",
-		Subgroup = "all",
+		Subgroup = "mining",
 		Enabled = false,
 		Productivity = false,
 		Recipe = true,
@@ -621,7 +646,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- Frames --------------------------------------------------------
 	{
 		Name = "frame-1",
-		Subgroup = "all",
+		Subgroup = "machine",
 		Enabled = true,
 		Recipe = true,
 		Productivity = true,
@@ -630,7 +655,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "frame-2",
-		Subgroup = "all",
+		Subgroup = "machine",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -643,7 +668,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "frame-3",
-		Subgroup = "all",
+		Subgroup = "machine",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -657,7 +682,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "frame-4",
-		Subgroup = "all",
+		Subgroup = "machine",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -671,7 +696,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "frame-5",
-		Subgroup = "all",
+		Subgroup = "machine",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -686,7 +711,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- Blades--------------------------------------------------------
 	{
 		Name = "blade-1",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = true,
 		Productivity = true,
 		Recipe = true,
@@ -695,7 +720,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "rotor-1",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = true,
 		Productivity = true,
 		Recipe = true,
@@ -704,7 +729,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "blade-2",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -717,7 +742,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "rotor-2",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -728,7 +753,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "blade-3",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -742,7 +767,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "rotor-3",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -754,7 +779,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "blade-4",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -768,7 +793,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "rotor-4",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -780,7 +805,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "blade-5",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -793,7 +818,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "rotor-5",
-		Subgroup = "all",
+		Subgroup = "rotor",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -808,8 +833,9 @@ INTERMEDIATES = {
 	---------------------------------------------------- Capacitors--------------------------------------------------------
 	{
 		Name = "capacitor-1",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = true,
+		Order = "2",
 		Productivity = true,
 		Recipe = true,
 		Time = 5,
@@ -818,8 +844,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "capacitor-2",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "4",
 		Productivity = true,
 		Recipe = true,
 		Time = 7.5,
@@ -832,8 +859,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "capacitor-3",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "6",
 		Productivity = true,
 		Recipe = true,
 		Time = 10,
@@ -846,8 +874,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "capacitor-4",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "8",
 		Productivity = true,
 		Recipe = true,
 		Time = 12.5,
@@ -860,8 +889,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "capacitor-5",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "92",
 		Productivity = true,
 		Recipe = true,
 		Time = 15,
@@ -874,8 +904,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "flux-capacitor-1",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = true,
+		Order = "3",
 		Productivity = true,
 		Recipe = true,
 		Time = 5,
@@ -883,8 +914,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "flux-capacitor-2",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "5",
 		Productivity = true,
 		Recipe = true,
 		Time = 7.5,
@@ -895,8 +927,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "flux-capacitor-3",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "7",
 		Productivity = true,
 		Recipe = true,
 		Time = 10,
@@ -907,8 +940,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "flux-capacitor-4",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "91",
 		Productivity = true,
 		Recipe = true,
 		Time = 12.5,
@@ -919,8 +953,9 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "flux-capacitor-5",
-		Subgroup = "all",
+		Subgroup = "power",
 		Enabled = false,
+		Order = "93",
 		Productivity = true,
 		Recipe = true,
 		Time = 15,
@@ -932,17 +967,16 @@ INTERMEDIATES = {
 	---------------------------------------------------- ItemExits --------------------------------------------------------
 	{
 		Name = "item-exit-1",
-		Subgroup = "all",
+		Subgroup = "exits",
 		Enabled = true,
 		Productivity = true,
 		Recipe = true,
 		Time = 5,
-		Recipe_Normal = {{type = "item", name="rubber", amount=5},{type = "item", name="wooden-chest", amount=1},{type = "item", name="iron-plate", amount=12}},
-		
+		Recipe_Normal = {{type = "item", name="rubber", amount=5},{type = "item", name="wooden-chest", amount=1},{type = "item", name="iron-plate", amount=12}},	
 	},
 	{
 		Name = "item-exit-2",
-		Subgroup = "all",
+		Subgroup = "exits",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -955,7 +989,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "item-exit-3",
-		Subgroup = "all",
+		Subgroup = "exits",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -968,7 +1002,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "item-exit-4",
-		Subgroup = "all",
+		Subgroup = "exits",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -981,7 +1015,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "item-exit-5",
-		Subgroup = "all",
+		Subgroup = "exits",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -995,7 +1029,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- Assemblebots --------------------------------------------------------
 	{
 		Name = "assemblebot-1",
-		Subgroup = "all",
+		Subgroup = "assemble",
 		Enabled = true,
 		Recipe = true,
 		Time = 2,
@@ -1004,7 +1038,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "assemblebot-2",
-		Subgroup = "all",
+		Subgroup = "assemble",
 		Enabled = false,
 		Recipe = true,
 		Time = 4,
@@ -1014,7 +1048,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "assemblebot-3",
-		Subgroup = "all",
+		Subgroup = "assemble",
 		Enabled = false,
 		Recipe = true,
 		Time = 6,
@@ -1026,7 +1060,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "assemblebot-4",
-		Subgroup = "all",
+		Subgroup = "assemble",
 		Enabled = false,
 		Recipe = true,
 		Time = 8,
@@ -1038,7 +1072,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "assemblebot-5",
-		Subgroup = "all",
+		Subgroup = "assemble",
 		Enabled = false,
 		Recipe = true,
 		Time = 10,
@@ -1050,7 +1084,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "assemblebot-6",
-		Subgroup = "all",
+		Subgroup = "assemble",
 		Enabled = false,
 		Recipe = true,
 		Time = 12,
@@ -1062,7 +1096,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "assemblebot-7",
-		Subgroup = "all",
+		Subgroup = "assemble",
 		Enabled = false,
 		Recipe = true,
 		Time = 15,
@@ -1075,7 +1109,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- Heating Elements --------------------------------------------------------
 	{
 		Name = "heater-1",
-		Subgroup = "all",
+		Subgroup = "heater",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1086,7 +1120,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "heater-2",
-		Subgroup = "all",
+		Subgroup = "heater",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1100,7 +1134,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "heater-3",
-		Subgroup = "all",
+		Subgroup = "heater",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1114,7 +1148,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "heater-4",
-		Subgroup = "all",
+		Subgroup = "heater",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1128,7 +1162,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "heater-5",
-		Subgroup = "all",
+		Subgroup = "heater",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1143,7 +1177,7 @@ INTERMEDIATES = {
 	---------------------------------------------------- GearBoxes --------------------------------------------------------
 	{
 		Name = "gearbox-1",
-		Subgroup = "all",
+		Subgroup = "gearbox",
 		Enabled = true,
 		Productivity = true,
 		Recipe = true,
@@ -1152,7 +1186,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "gearbox-2",
-		Subgroup = "all",
+		Subgroup = "gearbox",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1164,7 +1198,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "gearbox-3",
-		Subgroup = "all",
+		Subgroup = "gearbox",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1177,7 +1211,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "gearbox-4",
-		Subgroup = "all",
+		Subgroup = "gearbox",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,
@@ -1190,7 +1224,7 @@ INTERMEDIATES = {
 	},
 	{
 		Name = "gearbox-5",
-		Subgroup = "all",
+		Subgroup = "gearbox",
 		Enabled = false,
 		Productivity = true,
 		Recipe = true,

@@ -61,5 +61,29 @@ data:extend(
     group = "dytech-inserter",
     order = "8"
   },
+  {
+    type = "item-subgroup",
+    name = "inserters-dytech-chest",
+    group = "dytech-inserter",
+    order = "9"
+  },
+  {
+    type = "item-subgroup",
+    name = "inserters-dytech-chest-medium",
+    group = "dytech-inserter",
+    order = "91"
+  },
+  {
+    type = "item-subgroup",
+    name = "inserters-dytech-chest-big",
+    group = "dytech-inserter",
+    order = "92"
+  },
+  {
+    type = "item-subgroup",
+    name = "inserters-other",
+    group = "dytech-inserter",
+    order = "93"
+  },
 }
 )

@@ -51,6 +51,12 @@ data:extend(
   },
   {
     type = "item-subgroup",
+	name = "dytech-machines-furnace-electric",
+    group = "dytech-machines",
+    order = "006"
+  },
+  {
+    type = "item-subgroup",
 	name = "dytech-machines-assembling",
     group = "dytech-machines",
     order = "007"
@@ -60,6 +66,18 @@ data:extend(
 	name = "dytech-machines-extractors",
     group = "dytech-machines",
     order = "008"
+  },
+  {
+    type = "item-subgroup",
+	name = "dytech-machines-extractors-oil",
+    group = "dytech-machines",
+    order = "008a"
+  },
+  {
+    type = "item-subgroup",
+	name = "dytech-machines-oil-processing",
+    group = "dytech-machines",
+    order = "008c"
   },
   {
     type = "item-subgroup",
@@ -78,6 +96,24 @@ data:extend(
 	name = "metallurgy-machines",
     group = "dytech-machines",
     order = "012"
+  },
+  {
+    type = "item-subgroup",
+	name = "dytech-machines-lab",
+    group = "dytech-machines",
+    order = "013"
+  },
+  {
+    type = "item-subgroup",
+	name = "dytech-machines-beacon",
+    group = "dytech-machines",
+    order = "014"
+  },
+  {
+    type = "item-subgroup",
+	name = "dytech-machines-misc",
+    group = "dytech-machines",
+    order = "015"
   },
 }
 )

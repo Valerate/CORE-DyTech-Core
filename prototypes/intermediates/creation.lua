@@ -1,13 +1,17 @@
 require "prototypes.intermediates.intermediates"
 
-local function DyTech_Core_Create_Intermediates_Item(NAME, CATEGORY, FUEL, GEM)
+local function DyTech_Core_Create_Intermediates_Item(NAME, CATEGORY, FUEL, GEM, ORDER)
 	local result = util.table.deepcopy(data.raw["item"]["wood"])
 	if CATEGORY == nil then local CATEGORY = "dytech-intermediates-raw" end
 	result.name = NAME
-	result.order = NAME
 	result.stack_size = 200
 	if NAME == "sand" then
 		result.stack_size = 2000
+	end
+	if ORDER then
+		result.order = ORDER
+	else
+		result.order = NAME
 	end
 	if GEM then
 		result.subgroup = "dytech-gem-"..CATEGORY
@@ -54,7 +58,7 @@ end
 
 for index,name in pairs(INTERMEDIATES) do
 	if name ~= nil then
-		DyTech_Core_Create_Intermediates_Item(name.Name, name.Subgroup, name.Fuel_Value, name.Gem)
+		DyTech_Core_Create_Intermediates_Item(name.Name, name.Subgroup, name.Fuel_Value, name.Gem, name.Order)
 		if name.Recipe then
 			DyTech_Core_Create_Intermediates_Recipe(name.Name, name.Subgroup, name.Enabled, name.RecipeType, name.ResultAmount, name.Time, name.Gem)
 			if data.raw.item["metallurgy-active"] and name.Recipe_Metallurgy then

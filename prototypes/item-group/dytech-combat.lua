@@ -9,6 +9,30 @@ data:extend(
   },
   {
     type = "item-subgroup",
+    name = "dytech-combat-guns",
+    group = "dytech-combat",
+    order = "0000a"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-guns-2",
+    group = "dytech-combat",
+    order = "0000b"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-guns-3",
+    group = "dytech-combat",
+    order = "0000c"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-grenade",
+    group = "dytech-combat",
+    order = "0001"
+  },
+  {
+    type = "item-subgroup",
     name = "dytech-combat-corpses",
     group = "dytech-combat",
     order = "999"
@@ -33,21 +57,51 @@ data:extend(
   },
   {
     type = "item-subgroup",
+    name = "dytech-combat-ammo-misc",
+    group = "dytech-combat",
+    order = "004a"
+  },
+  {
+    type = "item-subgroup",
     name = "dytech-combat-ammo",
     group = "dytech-combat",
-    order = "004a"
+    order = "004b"
   },
   {
     type = "item-subgroup",
-    name = "dytech-combat-ammo-capsule",
+    name = "dytech-combat-ammo-shotgun",
     group = "dytech-combat",
-    order = "004a"
+    order = "004c"
   },
   {
     type = "item-subgroup",
-    name = "dytech-combat-guns",
+    name = "dytech-combat-ammo-laser",
     group = "dytech-combat",
-    order = "005"
+    order = "004d"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-ammo-laser-shotgun",
+    group = "dytech-combat",
+    order = "004e"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-ammo-capsules",
+    group = "dytech-combat",
+    order = "004f"
+  },
+{
+    type = "item-subgroup",
+    name = "dytech-combat-ammo-capsules-2",
+    group = "dytech-combat",
+    order = "004g"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-ammo-capsules-3",
+    group = "dytech-combat",
+    order = "004h"
   },
   {
     type = "item-subgroup",
@@ -59,7 +113,25 @@ data:extend(
     type = "item-subgroup",
     name = "dytech-combat-capsules",
     group = "dytech-combat",
-    order = "007"
+    order = "007b"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-capsules-2",
+    group = "dytech-combat",
+    order = "007c"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-capsules-3",
+    group = "dytech-combat",
+    order = "007d"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-combat-robot-capsules",
+    group = "dytech-combat",
+    order = "007a"
   },
   {
     type = "item-subgroup",

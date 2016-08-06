@@ -1,6 +1,7 @@
 require "config"
 require "prototypes.intermediates.intermediates"
 require "prototypes.override-functions"
+require "prototypes.item-group-fix"
 
 ReplaceAllIngredientFluidWithFluid("water","clean-water")
 data.raw["recipe"]["dirty-water-sand"].ingredients = { {type="fluid", name="water", amount=10}, }
@@ -13,16 +14,6 @@ data.raw["recipe"]["dirty-water-to-water-2"].ingredients = {  {type="fluid", nam
 TechFix = true
 ItemFix = false
 Fast_Replace_Fix = true
-
-
--- for _, unit in pairs (data.raw.unit) do 
-    -- unit.loot = {{ 
-      -- item = "alien-artifact",
-      -- probability = 1,
-      -- count_min = 1,
-      -- count_max = 5 
-    -- }}
--- end
 
 for i, drill in pairs(data.raw["mining-drill"]) do
 	if not string.find(drill.name, "geothermal") then

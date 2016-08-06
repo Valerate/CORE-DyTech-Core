@@ -3,45 +3,9 @@ data:extend(
   {
     type = "item-group",
     name = "dytech-intermediates",
-    order = "z-3-dytech-intermediates",
+    order = "3",
 	inventory_order = "z-3-dytech-intermediates",
     icon = "__CORE-DyTech-Core__/graphics/item-group/intermediates.png",
-  },
-  {
-    type = "item-subgroup",
-    name = "dytech-intermediates-raw",
-    group = "dytech-intermediates",
-    order = "001"
-  },
-  {
-    type = "item-subgroup",
-    name = "dytech-intermediates-processing",
-    group = "dytech-intermediates",
-    order = "002"
-  },
-  {
-    type = "item-subgroup",
-    name = "dytech-intermediates-processed",
-    group = "dytech-intermediates",
-    order = "003"
-  },
-  {
-    type = "item-subgroup",
-    name = "dytech-intermediates-repair",
-    group = "dytech-intermediates",
-    order = "004"
-  },
-  {
-    type = "item-subgroup",
-    name = "dytech-intermediates-tools",
-    group = "dytech-intermediates",
-    order = "005"
-  },
-  {
-    type = "item-subgroup",
-    name = "dytech-intermediates-gears",
-    group = "dytech-intermediates",
-    order = "006"
   },
   {
     type = "item-subgroup",
@@ -51,15 +15,52 @@ data:extend(
   },
   {
     type = "item-subgroup",
+    name = "dytech-intermediates-assemble",
+    group = "dytech-intermediates",
+    order = "007a"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-intermediates-exits",
+    group = "dytech-intermediates",
+    order = "007b"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-intermediates-rotor",
+    group = "dytech-intermediates",
+    order = "007c"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-intermediates-mining",
+    group = "dytech-intermediates",
+    order = "007d"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-intermediates-gearbox",
+    group = "dytech-intermediates",
+    order = "007e"
+  },
+  {
+    type = "item-subgroup",
+    name = "dytech-intermediates-heater",
+    group = "dytech-intermediates",
+    order = "007f"
+  },
+  {
+    type = "item-subgroup",
     name = "dytech-intermediates-power",
     group = "dytech-intermediates",
     order = "008"
   },
+
   {
     type = "item-subgroup",
-    name = "dytech-intermediates-circuitry",
+    name = "dytech-intermediates-battery",
     group = "dytech-intermediates",
-    order = "009"
+    order = "009a"
   },
   {
     type = "item-subgroup",
@@ -75,15 +76,15 @@ data:extend(
   },
   {
     type = "item-subgroup",
-    name = "dytech-intermediates-enemies",
+    name = "dytech-intermediates-turret-2",
     group = "dytech-intermediates",
-    order = "012"
+    order = "011a"
   },
   {
     type = "item-subgroup",
-    name = "dytech-intermediates-all",
+    name = "dytech-intermediates-enemies",
     group = "dytech-intermediates",
-    order = "013"
+    order = "012"
   },
 }
 )
