@@ -801,6 +801,8 @@ data.raw.item["car"].order = "1"
 if data.raw.item["car2"] then
 	data.raw.item["car2"].subgroup = "dytech-combat-transport"
 	data.raw.item["car2"].order = "2"
+end
+if data.raw.item["tank-dytech-1"] then
 	data.raw.item["tank-dytech-1"].subgroup = "dytech-combat-transport"
 	data.raw.item["tank-dytech-1"].order = "4"
 	data.raw.item["tank-dytech-2"].subgroup = "dytech-combat-transport"
