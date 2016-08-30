@@ -704,7 +704,7 @@ data.raw.recipe["dirty-water-to-water"].subgroup = "dytech-fluid-cleaning"
 data.raw.recipe["dirty-water-to-water"].order = "4"
 data.raw.recipe["dirty-water-to-water-2"].subgroup = "dytech-fluid-cleaning"
 data.raw.recipe["dirty-water-to-water-2"].order = "5"
-if data.raw.item["machines-active"] then
+if data.raw.item["metallurgy-active"] then
 	data.raw.recipe["sand-purify"].subgroup = "dytech-fluid-cleaning"
 	data.raw.recipe["sand-purify"].order = "6"
 	data.raw.recipe["sludge-processing"].subgroup = "dytech-fluid-cleaning"
