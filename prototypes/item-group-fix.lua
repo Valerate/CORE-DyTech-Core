@@ -798,12 +798,14 @@ data.raw.item["tank"].subgroup = "dytech-combat-transport"
 data.raw.item["tank"].order = "3"
 data.raw.item["car"].subgroup = "dytech-combat-transport"
 data.raw.item["car"].order = "1"
-data.raw.item["car2"].subgroup = "dytech-combat-transport"
-data.raw.item["car2"].order = "2"
-data.raw.item["tank-dytech-1"].subgroup = "dytech-combat-transport"
-data.raw.item["tank-dytech-1"].order = "4"
-data.raw.item["tank-dytech-2"].subgroup = "dytech-combat-transport"
-data.raw.item["tank-dytech-2"].order = "4"
+if data.raw.item["car2"] then
+	data.raw.item["car2"].subgroup = "dytech-combat-transport"
+	data.raw.item["car2"].order = "2"
+	data.raw.item["tank-dytech-1"].subgroup = "dytech-combat-transport"
+	data.raw.item["tank-dytech-1"].order = "4"
+	data.raw.item["tank-dytech-2"].subgroup = "dytech-combat-transport"
+	data.raw.item["tank-dytech-2"].order = "4"
+end
 
 if data.raw.capsule["poison-capsule-1"] then
 	data.raw.capsule["poison-capsule-1"].subgroup = "dytech-combat-capsules-2"
@@ -980,8 +982,7 @@ data.raw.item["green-wire"].subgroup = "dytech-intermediates-wires"
 data.raw.item["green-wire"].order = "12"
 data.raw.item["iron-gear-wheel"].subgroup = "dytech-intermediates-gears"
 data.raw.item["iron-gear-wheel"].order = "2"
-data.raw.item["brick"].subgroup = "dytech-intermediates-processing"
-data.raw.item["brick"].order = "4"
+
 data.raw.item["stone-brick"].subgroup = "dytech-intermediates-processing"
 data.raw.item["stone-brick"].order = "3"
 data.raw.item["concrete"].subgroup = "dytech-intermediates-processing"
@@ -1033,6 +1034,8 @@ if data.raw["mining-tool"]["zinc-axe"] then
 	data.raw["mining-tool"]["cobalt-axe"].order = "8"
 end
 if data.raw.item["metallurgy-active"] then
+	data.raw.item["brick"].subgroup = "dytech-intermediates-processing"
+	data.raw.item["brick"].order = "4"
 	data.raw.item["aluminium-wire"].subgroup = "dytech-intermediates-wires"
 	data.raw.item["aluminium-wire"].order = "2"
 	data.raw.item["silver-wire"].subgroup = "dytech-intermediates-wires"
