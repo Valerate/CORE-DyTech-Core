@@ -293,7 +293,7 @@ INTERMEDIATES = {
 		Order = "1",
 		Time = 2,
 		Recipe_Normal = {{type="item", name="glass", amount=2},{type="item", name="electronic-circuit", amount=5}},
-		AddToTech = "laser-turrets",
+		AddToTech = "optics",
 	},	
 	{
 		Name = "ruby-lens-1",
