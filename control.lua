@@ -6,6 +6,12 @@ require "scripts/remote-calls"
 require "scripts/trees"
 
 
+script.on_configuration_changed(function(data)
+	for _,force in pairs(game.forces) do
+		force.reset_recipes()
+		force.reset_technologies()
+	end
+end)
 
 
 --[[Debug Functions]]--
@@ -180,7 +186,7 @@ end)
 script.on_event(defines.events.on_robot_built_entity, function(event)
 	fs.RobotBuildEntityLogger(event.created_entity.name)
 	fs.LoggerCount("RobotBuilt", 1)
-local player = game.players[event.player_index]
+local player = game.players[1]
 	if not remote.interfaces["treefarm_interface"] then
 	if event.created_entity.type == "tree" then
 	if seedTypeLookUpTable==nil then populateSeedTypeLookUpTable() end
