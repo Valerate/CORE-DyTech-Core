@@ -8,6 +8,9 @@ Config.BaseOverride = true
 Config.Technologies = true
 
 
+-- DO you want greenhouses to grow your wood in?
+Config.Greenhouse = true
+
 --[[ Cheats Toggles ]]--
 -- Here you can switch cheats on.
 -- Keep in mind, this breaks the game!

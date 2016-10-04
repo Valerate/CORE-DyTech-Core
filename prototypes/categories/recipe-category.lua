@@ -80,5 +80,9 @@ data:extend(
     type = "recipe-category",
     name = "lava-handler"
   },
+  {
+    type = "recipe-category",
+    name = "greenhouse"
+  },
 }
 )

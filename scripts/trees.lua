@@ -148,7 +148,7 @@ function placeSeedIntoList(entInfo)
 		for i = #global.tf.growing, 1, -1 do
 			if global.tf.growing[i].nextUpdate <= entInfo.nextUpdate then
 				table.insert(global.tf.growing, i + 1, entInfo)
-				debug("next tree update not ready")
+				-- debug("next tree update not ready")
 			return
 			end
 		end
@@ -156,20 +156,20 @@ function placeSeedIntoList(entInfo)
 	elseif #global.tf.growing == 1 then
 		if global.tf.growing[1].nextUpdate > entInfo.nextUpdate then
 			table.insert(global.tf.growing, 1, entInfo)
-			debug("next tree update ready")
+			-- debug("next tree update ready")
 		else
 			table.insert(global.tf.growing, entInfo)
-			debug("next tree update not ready")
+			-- debug("next tree update not ready")
 		end
 	else
 		table.insert(global.tf.growing, entInfo)
-		debug("next tree update not ready")
+		-- debug("next tree update not ready")
 	end
 end
 
 function calcEfficiency(entity, fertilizerApplied)
   local seedType = seedTypeLookUpTable[entity.name]
-  local currentTilename = game.get_surface("nauvis").get_tile(entity.position.x, entity.position.y).name
+  local currentTilename = game.surfaces.nauvis.get_tile(entity.position.x, entity.position.y).name
 
   local efficiency
 	if global.tf.seedPrototypes[seedType].efficiency[currentTilename] == nil then
